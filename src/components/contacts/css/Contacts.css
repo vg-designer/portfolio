@@ -1,0 +1,65 @@
+@import './../../Global.css';
+
+.contact-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.contacts-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 60%;
+  background-color: var(--nav-background);
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  position: relative;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+.contacts-card {
+  position: relative;
+  left: -30%;
+  top: 70%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.contacts-form {
+  position: relative;
+  padding: 0 10px 0 20px;
+  z-index: 0;
+  margin-left: 60px;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-main-container {
+    height: 90vh;
+    align-items: center;
+  }
+
+  .contacts-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+    height: 90vh;
+  }
+
+  .contacts-card {
+    max-width: 100px;
+    left: 0;
+    top: 60%;
+  }
+
+  .contacts-form {
+    padding: 10px;
+    margin-left: -15px;
+  }
+}

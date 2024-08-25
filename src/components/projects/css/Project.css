@@ -1,0 +1,29 @@
+@import './../../Global.css';
+
+.project-main-container {
+  background-color: var(--nav-background);
+  /* border: 1px solid var(--light-gray); */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  padding: 5px;
+  /* margin: 5px; */
+  text-align: center;
+  /* box-sizing: border-box; */
+}
+
+.proj-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.proj-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.proj-description {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}

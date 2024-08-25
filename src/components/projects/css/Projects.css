@@ -1,0 +1,26 @@
+.projects-main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.project-item {
+  margin: 0;
+  padding: 0;
+}
+
+.project-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .projects-main-container {
+    grid-template-columns: 1fr;
+  }
+}
