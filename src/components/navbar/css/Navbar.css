@@ -39,7 +39,7 @@
 
 .nav__item a {
    text-decoration: none; 
-   color: var(--pink);
+   color: var(--dark-Green);
    font-family: var(--font-family);
    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
    position: relative;

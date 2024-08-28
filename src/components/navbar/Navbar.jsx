@@ -54,7 +54,7 @@ export function Navbar({ brand, links, onLinkClick  }) {
             <div className='nav'>
                 <div className='nav__brand'>
                     <a onClick={handleBrandClick}>
-                        <img src='/imgs/corona-pink.svg' alt={brand} className='nav__brand-image' />
+                        <img src='/imgs/corona-verde.svg' alt={brand} className='nav__brand-image' />
                     </a>
                 </div>
                 <ul className={active}>

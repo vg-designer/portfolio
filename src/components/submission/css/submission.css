@@ -33,7 +33,7 @@
 .left-title, .left-text {
   text-align: center;
   width: 100%;
-  color:var(--light-gray);
+  color: var(--dark-Green);
 }
 
 .left-title {
@@ -78,7 +78,7 @@
 }
 
 .grid-item:nth-child(1) { 
-  background-color: var(--light-gray);
+  background-color: var(--leather);   
   border-top-right-radius: 100px;
 }
 
@@ -88,7 +88,7 @@
 } 
 
 .grid-item:nth-child(3) { 
-  background-color: var(--leather); 
+  background-color: var(--dark-Green); 
   border-top-left-radius: 100px; 
 }
 
@@ -115,8 +115,10 @@
 } 
 
 .grid-item:nth-child(8) { 
-  background-color: var(--light-gray); 
-  border-radius: 50%;
+  background-color: var(--dark-Green); 
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
   position: relative;
 }
 

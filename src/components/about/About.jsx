@@ -25,7 +25,7 @@ export function About() {
           <h2 className="name">Valeria Góngora Andrade</h2>
           <p className="email">v.gongoraandrade@gmail.com</p>
           <p className="text">Soy diseñadora con experiencia destacada en el uso de herramientas como Adobe Photoshop, Illustrator y Canva. Mi enfoque creativo se combina con habilidades técnicas sólidas para transformar ideas en piezas visuales impactantes. Disfruto colaborar en equipos, comunicándome de manera efectiva y aportando un enfoque positivo. Mi experiencia y habilidades blandas hacen de mí una opción sólida para contribuir a proyectos creativos.</p>
-          <button onClick={handleModalOpen} className="cv-button">Mi marca</button>
+          {/* <button onClick={handleModalOpen} className="cv-button">Mi marca</button> */}
           <a href="documents/ValeriaGongoraAndrade_CV.pdf" download className="cv-button">Descarga mi CV</a>                    
         </div>
         
