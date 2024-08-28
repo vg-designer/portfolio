@@ -38,11 +38,11 @@
 }
 
 .name, .email {
-  color: var(--light-gray);
+  color: var(--dark-Green);
 }
 
 .text {
-  color: var(--light-gray);
+  color: var(--dark-Green);
   text-align: justify;
 }
 

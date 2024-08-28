@@ -8,8 +8,8 @@ export function Submission() {
       <div className="left-container">
         <div className="left-top"></div> {/* Opcional: puedes usar esto para otros propósitos */}
         <div className="left-bottom">
-          <h1 className="left-title">Título</h1>
-          <p className="left-text">Este es un texto debajo del título.</p>
+          <h1 className="left-title">Diseñadora Grafica</h1>
+          <p className="left-text">Valeria Góngora Andrade</p>
         </div>
       </div>
       <div className="right-container">
