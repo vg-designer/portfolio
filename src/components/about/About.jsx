@@ -1,78 +1,43 @@
 import React, { useState } from 'react';
+import Modal from './Modal';
 import './css/About.css';
 
 export function About() {
-  // Ejemplo de datos dinámicos para los roles
-  const [roles, setRoles] = useState([
-    {
-      icon: '/imgs/linkedin.png',
-      roleType: 'Desarrollador Frontend',
-      companyName: 'Compañía XYZ',
-    },
-    {
-      icon: '/imgs/linkedin.png',
-      roleType: 'Ingeniero de Software',
-      companyName: 'Compañía ABC',
-    },
-  ]);
+  const [isModalVisible, setModalVisible] = useState(false);
 
-  // Ejemplo de datos dinámicos para las redes sociales
-  const [socialLinks, setSocialLinks] = useState([
-    {
-      icon: '/imgs/instagram.png',
-      url: 'https://www.instagram.com',
-      alt: 'Instagram'
-    },
-    {
-      icon: '/imgs/tik-tok.png',
-      url: 'https://www.tiktok.com',
-      alt: 'TikTok'
-    },
-    {
-      icon: '/imgs/linkedin.png',
-      url: 'https://www.linkedin.com',
-      alt: 'LinkedIn'
-    },
-  ]);
+  const handleModalOpen = () => {
+    setModalVisible(true);
+  };
+
+  const handleModalClose = () => {
+    setModalVisible(false);
+  };
 
   return (
     <div className="about-main-container">
       <div className="about-container">
-        <div className="about-left-container">
-          <img src="/imgs/linkedin.png" alt="Foto de perfil" className="profile-picture" />
+        <div className="about-left-container">   
+          <div className="image-wrapper">      
+            <img src="/imgs/logo vg - 2023.webp" alt="Imagen descriptiva" className="about-image" />
+          </div>
+        </div>
+        <div className="about-right-container">          
           <h2 className="name">Valeria Góngora Andrade</h2>
           <p className="email">v.gongoraandrade@gmail.com</p>
-          <a href="documents/ValeriaGongoraAndrade_CV.pdf" download className="cv-button">Descarga mi CV</a>
+          <p className="text">Soy diseñadora con experiencia destacada en el uso de herramientas como Adobe Photoshop, Illustrator y Canva. Mi enfoque creativo se combina con habilidades técnicas sólidas para transformar ideas en piezas visuales impactantes. Disfruto colaborar en equipos, comunicándome de manera efectiva y aportando un enfoque positivo. Mi experiencia y habilidades blandas hacen de mí una opción sólida para contribuir a proyectos creativos.</p>
+          <button onClick={handleModalOpen} className="cv-button">Mi marca</button>
+          <a href="documents/ValeriaGongoraAndrade_CV.pdf" download className="cv-button">Descarga mi CV</a>                    
         </div>
-        <div className="about-right-container">
-          <div className="right-top">
-            <h3 className="about-me">SOBRE MÍ</h3>
-            <h4 className="title-3">Abierto a trabajar</h4>
-            <p className="text">Soy diseñadora con experiencia destacada en el uso de herramientas como Adobe Photoshop, Illustrator y Canva. Mi enfoque creativo se combina con habilidades técnicas sólidas para transformar ideas en piezas visuales impactantes. Disfruto colaborar en equipos, comunicándome de manera efectiva y aportando un enfoque positivo. Mi experiencia y habilidades blandas hacen de mí una opción sólida para contribuir a proyectos creativos.</p>
-          </div>
-          <div className="right-bottom">
-            <h4 className="title-3">Últimos roles</h4>
-            {roles.map((role, index) => (
-              <div className="role" key={index}>
-                <img src={role.icon} alt="Icono de trabajo" className="role-icon" />
-                <div className="role-info">
-                  <p className="role-type">{role.roleType}</p>
-                  <p className="company-name">{role.companyName}</p>
-                </div>
-              </div>
-            ))}
-            <h4 className="title-3">Redes Sociales</h4>
-            <div className="social-icons">
-              {socialLinks.map((link, index) => (
-                <a href={link.url} target="_blank" rel="noopener noreferrer" key={index}>
-                  <img src={link.icon} alt={link.alt} className="social-icon" />
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>      
+        
+      </div>  
+
+      <Modal 
+        isVisible={isModalVisible} 
+        onClose={handleModalClose}
+        title="Mi Marca"
+        description="Descripción de la marca de Valeria Góngora Andrade."
+        image="/imgs/logo vg - 2023.webp"
+      />    
     </div>
   );
 }
-

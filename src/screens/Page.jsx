@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar } from '@/components/navbar/Navbar';
+import { Submission } from '@/components/submission/submission';
 import { Carrusel } from '@/components/carrusel/Carrusel';
 import { About } from '@/components/about/About';
 import { Projects } from '@/components/projects/Projects';
@@ -25,9 +26,13 @@ export function Page() {
 
   return (
     <div className="page">
+      <div id="submission" className="submission component">
+        <Submission />
+      </div>
       <div className="navbar component">
         <Navbar brand="Menu" links={links} onLinkClick={scrollToSection} />
       </div>
+      
       <div id="aboutme" className="aboutme component">
         <About />
       </div>
