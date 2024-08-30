@@ -15,9 +15,9 @@
   grid-template-columns: 30% 70%;
   width: 60%;
   background-color: var(--nav-background);
-  border: 1px solid var(--light-gray);
+  /* border: 1px solid var(--light-gray); */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   padding: 5px;
   position: relative;
   margin: 0 auto;
@@ -26,18 +26,18 @@
 
 .contacts-card {
   position: relative;
-  left: -30%;
-  top: 70%;
+  left: -10%;
+  top: 75%;
   transform: translateY(-50%);
   z-index: 1;
 }
 
 .contacts-form {
   position: relative;
-  padding: 0 10px 0 20px;
+  padding: 1px;
   z-index: 0;
-  margin-left: 60px;
-  margin-top: 0;
+  margin-left: 100px;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
