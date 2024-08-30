@@ -1,14 +1,15 @@
 import React from 'react';
 import './css/Footer.css';
+import content from './content.json';
 
 export function Footer() {
   return (
     <div className="footer">
       <div className="footer-content">
         <div className="footer-text">
-          <p>© Copyright 2024-2025</p>
-          <p>All rights reserved</p>
-          <p>Powered by the TURWARE</p>
+          <p>{content.footer.title}</p>
+          <p>{content.footer.description}</p>
+          <p>{content.footer.powered}</p>
         </div>
       </div>
     </div>

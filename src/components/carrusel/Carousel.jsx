@@ -1,14 +1,11 @@
 import React from 'react';
-import './css/Carrusel.css';
+import './css/Carousel.css';
+import content from './content.json';
+import images from './images.json';
 
-export function Carrusel() {
-  const row1 = [
-    "adobe-illustrator.png",
-    "adobe-photoshop.png",
-    "After-Effects.png",
-    "InDesign.jpg",
-    "Premiere-Pro.png",
-  ];
+
+export function Carousel() {
+  const row1 = images.carousel.images;
 
   const imgPath = 'imgs/';
 
@@ -24,7 +21,7 @@ export function Carrusel() {
                   src={`/${imgPath}${filename}`} 
                   alt={`Image ${index + 1}`} 
                   onError={(e) => {
-                    console.error(`Error loading image: /${imgPath}${filename}`);
+                    console.error(`/${content.carousel.error}: /${imgPath}${filename}`);
                     e.target.style.display = 'none';
                   }}
                 />
@@ -40,7 +37,7 @@ export function Carrusel() {
                   src={`/${imgPath}${filename}`} 
                   alt={`Image ${index + 1}`} 
                   onError={(e) => {
-                    console.error(`Error loading image: /${imgPath}${filename}`);
+                    console.error(`/${content.carousel.error}: /${imgPath}${filename}`);
                     e.target.style.display = 'none'; 
                   }}
                 />

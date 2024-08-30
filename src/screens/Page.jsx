@@ -1,13 +1,15 @@
 import React from 'react';
+import content from './content.json';
 import { Navbar } from '@/components/navbar/Navbar';
 import { Submission } from '@/components/submission/submission';
-import { Carrusel } from '@/components/carrusel/Carrusel';
+import { Carousel } from '@/components/carrusel/Carousel';
 import { About } from '@/components/about/About';
 import { Projects } from '@/components/projects/Projects';
 import { Contacts } from '@/components/contacts/Contacts';
 import { Footer } from '@/components/footer/Footer';
 import { VisitCounter } from '@/components/visitCounter/VisitCounter';
 import "./Page.css";
+
 
 export function Page() {
   const scrollToSection = (id) => {
@@ -26,21 +28,20 @@ export function Page() {
 
   return (
     <div className="page">
-      <div id="submission" className="submission component">
+      <div id="home" className="submission component">
         <Submission />
       </div>
       <div className="navbar component">
         <Navbar brand="Menu" links={links} onLinkClick={scrollToSection} />
-      </div>
-      
+      </div>      
       <div id="aboutme" className="aboutme component">
         <About />
       </div>
-      <div id="home" className="carousel component">
-        <Carrusel />
+      <div id="carousel" className="carousel component">
+        <Carousel />
       </div>
       <div id="projects" className="projects component">
-        <p className="title-section">Mis Proyectos</p>
+        <p className="title-section">{content.page.moduleproject}</p>
         <Projects />
       </div>
       {/* <div id="contacts" className="contacts component">
@@ -49,7 +50,7 @@ export function Page() {
       <div className="footer component">
         <Footer />
       </div>
-      <VisitCounter />
+        <VisitCounter />
     </div>
   );
 }

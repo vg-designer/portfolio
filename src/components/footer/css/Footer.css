@@ -1,10 +1,10 @@
 @import './../../Global.css';
 
 .footer {
-  background-color: var(--dark-Green);
+  /* background-color: var(--dark-Green); */
   padding: 0px;
   text-align: center;
-  color: var(--light-gray);
+  color: var(--dark-Green);
 }
   
 .footer-content {

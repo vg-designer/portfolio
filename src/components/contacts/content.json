@@ -1,0 +1,37 @@
+{ 
+    "card": {
+        "title": "Información Contacto",
+        "labelbutton": "Agenda tu cita",
+        "email": "v.gongoraandrade@gmail.com",
+        "phone": "+57 312 688 7362"
+    }, 
+    "configform": {
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSdAl7fn47TkQfchcElMBQO3g59eFK0KiIq8QloNFbojSV01DQ/formResponse",
+        "name": "entry.288849404",
+        "email": "entry.61740073",
+        "subject": "entry.565624442",
+        "message": "entry.1234419938",
+        "year": "entry.1240604319_year",
+        "month": "entry.1240604319_month",
+        "day": "entry.1240604319_day",
+        "hour": "entry.752076140_hour",
+        "minute": "entry.752076140_minute"
+    },
+    "form": {
+        "tittleform": "Contáctame",
+        "errorform": "Error al enviar el formulario",
+        "errorname": "El nombre completo es requerido",
+        "erroremail": "El Email es requerido",
+        "errorsubject": "El tema es requerido",
+        "errormessage": "El mensaje es requerido",
+        "tittlename": "Nombre completo",
+        "tittleemail": "Email",
+        "tittlesubject": "Tema",
+        "tittlemesaage": "Mensaje"
+    },
+    "styleddialog": {
+        "tittle": "Éxito",
+        "message": "Su información fue registrada satisfactoriamente.",
+        "tittlebutton": "Cerrar"
+    }
+  }

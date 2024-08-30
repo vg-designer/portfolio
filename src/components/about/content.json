@@ -1,0 +1,18 @@
+{
+    "about":{
+        "name": "Valeria Góngora Andrade",
+        "email": "v.gongoraandrade@gmail.com",
+        "text": "Soy diseñadora con experiencia destacada en el uso de herramientas como Adobe Photoshop, Illustrator y Canva. Mi enfoque creativo se combina con habilidades técnicas sólidas para transformar ideas en piezas visuales impactantes. Disfruto colaborar en equipos, comunicándome de manera efectiva y aportando un enfoque positivo. Mi experiencia y habilidades blandas hacen de mí una opción sólida para contribuir a proyectos creativos.",
+        "cv_button": "Descarga mi CV",
+        "marca_button": "Mi marca"
+    }, 
+    "cv": {
+        "label": "Descarga mi CV",
+        "link": "documents/ValeriaGongoraAndrade_CV.pdf"
+    },
+    "modal": {
+        "title": "Mi Marca",
+        "description": "Descripción de la marca de Valeria Góngora Andrade.",
+        "labelbutton": "Aceptar"
+    }
+  }

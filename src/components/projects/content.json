@@ -1,0 +1,46 @@
+{ 
+    "projects":{
+        "info": [
+            {
+              "image": "/imgs/logo jewel essence - 2024.webp",
+              "title": "Product Title 1",
+              "description": "This is a description of the product 1."
+            },
+            {
+              "image": "/imgs/logo bellota - 2024.webp",
+              "title": "Product Title 2",
+              "description": "This is a description of the product 2."
+            },
+            {
+              "image": "/imgs/logo chicago - 2024.webp",
+              "title": "Product Title 3",
+              "description": "This is a description of the product 3."
+            },
+            {
+              "image": "/imgs/logo hillary - 2024.webp",
+              "title": "Product Title 4",
+              "description": "This is a description of the product 34."
+            },
+            {
+              "image": "/imgs/logo juli market - 2024.webp",
+              "title": "Product Title 5",
+              "description": "This is a description of the product 5."
+            },
+            {
+              "image": "/imgs/logo office oasis - 2024.webp",
+              "title": "Product Title 6",
+              "description": "This is a description of the product 36."
+            },
+            {
+              "image": "/imgs/logo soulful silhouettes - 2024.webp",
+              "title": "Product Title 7",
+              "description": "This is a description of the product 7."
+            },
+            {
+              "image": "/imgs/logo turware - 2023.webp",
+              "title": "Product Title 8",
+              "description": "This is a description of the product 38."
+            }
+          ]
+    }
+  }

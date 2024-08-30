@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getIPAddress } from './../services/IpService';
 import './css/VisitCounter.css';
+import content from './content.json';
 
 export function VisitCounter() {
   const [ipAddress, setIpAddress] = useState('');
@@ -17,7 +18,6 @@ export function VisitCounter() {
           ip,
           date: now.toLocaleString(),
         };
-        // alert(`IP: ${visitInfo.ip}\nFecha y Hora: ${visitInfo.date}`);
         recordVisit(visitInfo);
       }
     };
@@ -36,7 +36,7 @@ export function VisitCounter() {
 
   return (
     <div className="visit-counter">
-      <p>Visitas a la página: {count}</p>
+      <p>{content.visitcounter.title} {count}</p>
       {/* <p>Última visita desde IP: {ipAddress}</p>
       <p>Fecha y Hora: {visitDate}</p> */}
     </div>

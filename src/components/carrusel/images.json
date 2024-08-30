@@ -1,0 +1,11 @@
+{ 
+    "carousel": {
+        "images": [
+        "adobe-illustrator.png",
+        "adobe-photoshop.png",
+        "After-Effects.png",
+        "InDesign.jpg",
+        "Premiere-Pro.png"
+        ]
+    }
+}

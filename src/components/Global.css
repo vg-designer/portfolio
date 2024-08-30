@@ -11,9 +11,9 @@
 
     --nav-background: rgba(255, 255, 255,.09);
     --nav-border-color: var(--dark-Green);
-    --nav-hover-color: var(--light-gray);
+    --nav-hover-color: var(--salmon);
     /* --nav-active-color: rgba(81, 88, 81, 1); */
-    --nav-active-color: var(--light-gray);
+    --nav-active-color: var(--salmon);
     --nav-toggle-width: 2.5rem;
     --nav-toggle-height: 0.2rem;
     --nav-toggle-margin: 0.4rem;

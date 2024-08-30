@@ -1,6 +1,7 @@
 import React, { useState, useEffect  } from 'react';
 import PropTypes from 'prop-types';
 import "./css/Navbar.css";
+import images from './images.json';
 
 export function Navbar({ brand, links, onLinkClick  }) {
     const [active, setActive] = useState('nav__menu');
@@ -54,7 +55,7 @@ export function Navbar({ brand, links, onLinkClick  }) {
             <div className='nav'>
                 <div className='nav__brand'>
                     <a onClick={handleBrandClick}>
-                        <img src='/imgs/corona-verde.svg' alt={brand} className='nav__brand-image' />
+                        <img src={images.navbar.logo} alt={brand} className='nav__brand-image' />
                     </a>
                 </div>
                 <ul className={active}>

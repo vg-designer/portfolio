@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/submission.css';
+import content from './content.json';
 
 export function Submission() {
   
@@ -8,8 +9,8 @@ export function Submission() {
       <div className="left-container">
         <div className="left-top"></div> {/* Opcional: puedes usar esto para otros propósitos */}
         <div className="left-bottom">
-          <h1 className="left-title">Diseñadora Grafica</h1>
-          <p className="left-text">Valeria Góngora Andrade</p>
+          <h1 className="left-title">{content.submission.title}</h1>
+          <p className="left-text">{content.submission.name}</p>
         </div>
       </div>
       <div className="right-container">
